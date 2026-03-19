@@ -1,0 +1,116 @@
+/*Body*/
+.emotions,
+.landing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/num.gif);
+}
+
+.landing {
+    text-align: center;
+}
+
+.landing h1 {
+    font-family: "Felipa";
+    margin: 0;
+}
+
+
+/*Grey Container*/
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #e0e0e0;
+    background: radial-gradient(circle, rgba(224, 224, 224, 1) 0%, rgba(77, 75, 75, 1) 100%);
+    padding: 10px;
+    align-self: stretch;
+    max-width: 300px;
+    border: 3px solid rgb(137, 135, 135);
+    transition: transform 0.2s;
+}
+
+/*Landing Page*/
+.landing-section {
+    margin-top: 260px;
+}
+
+a img {
+    margin-top: 10px;
+    display: block;
+    width: 90px;
+    height: 30px
+}
+
+
+
+
+
+/*Emotions Page*/
+.emotions-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    width: 100%;
+    max-width: 300px;
+}
+
+
+
+.emotions-wrap section:hover {
+    transform: scale(1.01);
+}
+
+.emotions-wrap section:active {
+    transform: scale(0.95);
+}
+
+.joyous h2,
+.cringed h2,
+.awkwardness h2,
+.pain h2,
+.pain-but-it-disappeared h2,
+.shocked h2,
+.true-happiness h2,
+.william-final-form h2 {
+    font-size: 40px;
+    font-family: "Felipa";
+    text-align: center;
+    margin: 5px;
+}
+
+.joyous p,
+.cringed p,
+.awkwardness p,
+.pain p,
+.pain-but-it-disappeared p,
+.shocked p,
+.true-happiness p,
+.william-final-form p {
+    font-size: 25px;
+    font-weight: 700;
+    font-family: "Cormorant";
+    margin-block: 20px;
+    text-align: justify;
+}
+
+img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border: 2px solid black;
+}
+
+@media (min-width: 800px) {
+    .emotions-wrap {
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 800px;
+    }
+
+    section {
+        width: 300px;
+    }
+}
